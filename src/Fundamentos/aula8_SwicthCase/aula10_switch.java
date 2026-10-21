@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.aula8_SwicthCase;
 import java.util.Scanner;
 public class aula10_switch {
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class aula10_switch {
 
         Scanner scanner = new Scanner(System.in);
 
-        int opcoes,idade;
+        int opcoes,idade; // aqui criamos todas as variaveis que vamos precisar ate o momento
         float peso;
         String nome;
 
@@ -29,7 +29,7 @@ public class aula10_switch {
 
         System.out.print("Peso: ");
         peso = scanner.nextFloat();
-
+        scanner.nextLine(); //limpa o buffer
 
         // poderiamos pedir estes valores dentro dos case(s) mas, aqui ficou uma forma mais organizada para receber e depois informar
 
@@ -44,18 +44,18 @@ public class aula10_switch {
         opcoes= scanner.nextInt(); // aqui ja coletamos a opçao desejada para comparar com o switch
 
 
-        switch (opcoes){
+        switch (opcoes){ // aqui o switch usa como forma de comparação a variavel opçes que é nela que esta a opçao desejada pelo usuario
             case 1:
-                System.out.println("Bem vindo " + nome);
+                System.out.println("Bem vindo " + nome);  // se ele informar somente a idade irá retornar isto
                 break;
             case 2:
-                System.out.println(nome + " possui " + idade + " anos de idade");
+                System.out.println(nome + " possui " + idade + " anos de idade"); // aqui se deseja informar nome e idade
                 break;
             case 3:
-                System.out.println(nome + " tem " + idade + " anos de idade e pesa " + peso + "kgs" );
+                System.out.println(nome + " tem " + idade + " anos de idade e pesa " + peso + "kgs" ); // esta se ele deseja informar nome idade e peso
                 break;
             default:
-                System.out.println("Dados invalidos " );
+                System.out.println("Dados invalidos " );  // esta aqui serve para quando o usuario digitar algo fora das opçoes
 
         }
 
@@ -79,7 +79,7 @@ public class aula10_switch {
 
         switch (escolha) {
             case 1:
-                System.out.println("Saldo: " + saldo);
+                System.out.println("Saldo: " + saldo); // se escolher ver o saldo ira retornar somente o valor do saldo
                 break;
 
             case 2:
@@ -96,7 +96,7 @@ public class aula10_switch {
                 } else {    // o else tambem entra em um conjunto para situaçoes mais complexas
                     System.out.println("Saldo insuficiente");
                 }
-                break;
+                break;  // aqui comprar se o valor do saque e menor eu igual ao que esta no saldo, se sim , realiza o saqie e informa o total do saldo que ficou, agora se o valor for acima do seu saldo informa a outra mensagem
 
             case 3:
                 System.out.print("Valor para depositar: ");
@@ -105,14 +105,14 @@ public class aula10_switch {
                 // Novamente usamos o if else para verificar casos
                 // e se for preciso tambem podemos usar o else if (elif)
 
-                if (deposito > 0) {
+                if (deposito >= 0) {
                     saldo += deposito;
                     System.out.println("Depósito realizado");
                     System.out.println("Seu novo saldo é: " + saldo);
                 } else {
                     System.out.println("Valor inválido");
                 }
-                break;
+                break; // aqui e uma forma de segurança para o usuario nao digitar um valor negativo ou valor nulo
 
                 // o defaut serve para caso o usuario digitar uma opçao que nao corresponde com as que estao dispiniveis
                 // por exemplo se o usuario digitar (4) ou qualquer outro numero que nao esta corespondente com o case

@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.aula5_Casting;
 
 public class aula5_casting {
     public static void main(String[] args) {

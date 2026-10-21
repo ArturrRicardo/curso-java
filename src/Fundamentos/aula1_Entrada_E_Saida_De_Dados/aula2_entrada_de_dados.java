@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.aula1_Entrada_E_Saida_De_Dados;
 import java.util.Scanner;
 public class aula2_entrada_de_dados {
     public static void main(String[] args) {
@@ -28,7 +28,7 @@ public class aula2_entrada_de_dados {
         double num = imput.nextDouble(); // para double
 
 
-        char caracter = imput.nextLine().charAt(0); // aqui estamos adaptamos o chat para ler com se fosse uma stinrg
+        char caracter = imput.nextLine().charAt(0); // aqui estamos adaptamos o char para ler como se fosse uma string
         // e ai pegamos somente o primeiro caractere da entrada
 
         // continuar a explicação...
@@ -66,6 +66,10 @@ public class aula2_entrada_de_dados {
         String nome = imput.nextLine();
 
         System.out.println(" Isso e um exemplo mas deve ser aplicado por exemplo se houver int+String ou int + float + string  ");
+        System.out.println(" Entao o ideal a se fazer e sempre que estiver lendo algo numerico e apos vc precisar ler uma string antes de ler a string \n" +
+                " sempre crie um nextline antes de ler a string para limpar o buffer " );
+        imput.close(); // sempre é necessario fechar o nosso buffer
+
 
     }
 }

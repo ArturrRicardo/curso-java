@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.aula1_Entrada_E_Saida_De_Dados;
 
 public class aula1_saida_de_dados {
     public static void main(String[] args) {

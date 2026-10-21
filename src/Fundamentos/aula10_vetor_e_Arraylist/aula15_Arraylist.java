@@ -1,13 +1,13 @@
-package Fundamentos;
+package Fundamentos.aula10_vetor_e_Arraylist;
 import java.util.ArrayList;
 public class aula15_Arraylist {
     public static void main(String[] args) {
         System.out.println("Arraylist".toUpperCase());
         // parecido com o array (vetor) porem nao possui tamanho fixo
-        // Só aceita somente um tipo primitivo dentro tambem
+        // Só aceita somente um tipo primitivo tambem
         //sintaxe
 
-        ArrayList<String> nomes = new ArrayList<String>(); // chama o arraylist informa o tipo (sempre pelas wrapper class) nomeia o objeto e cria o objeto
+        ArrayList<String> nomes = new ArrayList<String>(); // chama o arraylist informa o tipo (sempre pelas wrapper class), nomeia o objeto (que no caso aqui é o arraylist), e apos cria o objeto arraylist ( que neste caso se chama (nomes))
 
         nomes.add("Maria");
         nomes.add("Ana");
@@ -16,10 +16,10 @@ public class aula15_Arraylist {
 
         // aqui adicionei cada valor em expecifico, mas posso continuar adicionando mais valor se precisar
 
-        System.out.println(nomes); // aqui eu posso mostrar meu arraylist sem precisae de loop
+        System.out.println(nomes); // aqui eu posso mostrar meu arraylist sem precisae de laço de repetição
 
-        for(String p:nomes){ //aqui usamos o for each (laço de repetiçao para estar mostrando o arralist
-            System.out.println(p);
+        for(String p:nomes){ //aqui usamos o for each (laço de repetiçao para estar mostrando o arraylist
+            System.out.println(p); // aqui ele mostra todas as casas em volta por volta
         }
 
         nomes.clear(); // metodo para apagar todos os dados contidos no arraylist
@@ -49,12 +49,12 @@ public class aula15_Arraylist {
         System.out.println();
         System.out.println("O tamanho do arraylist é: " + numeros.size()); // aqui ele me informa o tamanho do arraylist usndo o .size()
 
-        System.out.println(numeros.contains(3)); // aqui estamos verificando se temos no nosso arraylist o valor 3 ele retorna valor boleano
+        System.out.println(numeros.contains(3)); // aqui estamos verificando se temos no nosso arraylist o valor 3, ele retorna valor boleano
         System.out.println(numeros.contains(30));
 
 
-        System.out.println(numeros.indexOf(1234)); // informa a posição do valor dentro do arraylist
-        System.out.println(numeros.indexOf(2));  // quando nao acha o valor na posição ele retorna -1
+        System.out.println(numeros.indexOf(1234)); // informa a posição do valor dentro do arraylist (casa onde ele esta)
+        System.out.println(numeros.indexOf(2));  // quando nao acha o valor na posição ele retorna -1 ( ou seja aqui n temos nenhuma casa com o valor 2 )n
 
         numeros.set(1,444); // aqui usamos o metodo de subistituir o elemento da posição por outro, no nosso caso trocamos o elemento da posiçao 1 por 444
         System.out.println(numeros.get(1));

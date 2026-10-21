@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.aula9_Laços;
 import java.util.Scanner;
 public class aula12_do_while {
     public static void main(String[] args) {

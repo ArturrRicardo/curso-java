@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.aula9_Laços;
 import java.util.Scanner;
 public class aula11_while {
     public static void main(String[] args) {
@@ -7,14 +7,14 @@ public class aula11_while {
         Scanner scanner = new Scanner(System.in);
 
         // estruturas de repetiçao serve para realizar uma tarefa varias vezes ate que uma condiçao realize a parada
-        // para isso é necessario ter uma variavel de controle (ou seja: algo que controle para nao fiar repetido infinitamente)
-        // na maioria das vezes chamamos esta variavel de controle de contador
+        // para isso é necessario ter uma variavel de controle (ou seja: algo que controle para nao ficar repetido infinitamente)
+        // na maioria das vezes chamamos esta variavel de controle, de contador
 
         int contador=0; // aqui criamos o contador
         int numero = 4; // aqui criei uma variavel para uma determinada situaçao dentro do laço
 
-        // a estrutura de repetição e estrututada desta forma
-        // while= enquanto (condiçao que esta dentro do parenteses for verdadeira continue o laço , se for false para
+        // a estrutura de repetição é estrututada desta forma
+        // while = enquanto (condiçao que esta dentro do parenteses for verdadeira continue o laço , se for false para
 
         while (contador<11){// aqui estamos indo de 0 a 10 (pois quando chegar ao 11 o contador nao contiuara pq cont=11 nao e < 11, e sim igual a 11 entao a condiçao nao bate e ele encerra o laço
             System.out.println(numero + " x " + contador + " = " + numero*contador );
@@ -67,9 +67,9 @@ public class aula11_while {
                 contar++; // ao entrar no laço ele automaticamente ja incrementa +1
                 if (contar== 3 || contar==5 || contar==7){ // aqui se a nossa variavel de controle receber o valor 3 5 ou 7
                     continue; // o continue faz com que ele nao termine a volta e volte para o inicio do laço ou seja daqui mesmo volta p cima
-                             //ou seja: ignora tudo que está na parte de baixo e volta p inicio do laço
+                             //ou seja: ignora tudo que está na parte de baixo e volta p inicio do laço , como se ele pulasse esta volta
                 }
-                if (contar==9){ // se a nossa variavel de controle receber 9 entra nesta condiçao aqui
+                if (contar==9){ // se a nossa variavel de controle receber 9, entra nesta condiçao aqui
                     break; // e entrando dentro desta condiçao ela faz com o que o laço pare de ser execultado e sai do laço
                 }
                 System.out.println(" volta numero: " + contar);

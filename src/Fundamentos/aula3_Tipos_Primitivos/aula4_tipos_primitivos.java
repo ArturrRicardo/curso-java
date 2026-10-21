@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.aula3_Tipos_Primitivos;
 
 public class aula4_tipos_primitivos {
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class aula4_tipos_primitivos {
         double num6 = 77.77777777; //numeros deciamais que passam de 7 casas apos a virgula
 
         System.out.println("Variaveis constantes");
-        final double  VALOR_DE_PI =3.14; // essa variavel é uma variavel fixa ou seja dentro do codigp numca vamos altera-la
+        final double  VALOR_DE_PI =3.14; // essa variavel é uma variavel fixa ou seja dentro do codigo numca vamos altera-la
 
         System.out.println("tipos primitvos de prints em java ".toUpperCase());
 

@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.aula2_Operadores;
 
 public class aula3_operadores {
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class aula3_operadores {
         System.out.println("( > )  maior ");
         System.out.println("( < ) menor ");
         System.out.println("( != ) diferente");
-        System.out.println("( == ) igual " );
+        System.out.println("( == ) igual  mas para comparar igualdade em uma string uamos o (.equals) " );
         System.out.println("( >= ) maior ou igual ");
         System.out.println("( <= ) menor ou igual " ) ;
 
@@ -32,14 +32,14 @@ public class aula3_operadores {
 
         System.out.println("Operadores logicos ".toUpperCase());
         //  compara situaçoes  para dizer se sao verdadeiras ou não
-        System.out.println("( && = significa e ) Ele compara se duas situaçoes sao verdadeiras ou nao" +
+        System.out.println("( && = significa [E] ) Ele compara se duas situaçoes sao verdadeiras ou nao" +
                 "\n só ira retornar verdadeiro se ambas situações retornarem o mesmo valor");
 
-        System.out.println("( || = significa ou ) compara se uma ou outra situaçao e verdadeira\n" +
+        System.out.println("( || = significa [OU] ) compara se uma ou outra situaçao e verdadeira\n" +
                 "só retorna verdadeira se uam delas for verdade \n" +
                 "e falso se TODAS forem falso ");
 
-        System.out.println("( ! = significa negaçao ) Este operador tem a funçao de reverter o valor de alguma circustância \n" +
+        System.out.println("( ! = significa [NEGAÇÂO] ) Este operador tem a funçao de reverter o valor de alguma circustância \n" +
                 "por exemplo se a frase ( a camisa é preta ) se mudarmos para (! a camisa é preta )\n" +
                 "ficaria assim (a camisa não é preta)" );
     }

@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.aula4_Incremento;
 
 public class aula6_incremento {
     public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class aula6_incremento {
         // aqui temos:
         // 4 + ++(c)=4
         // o resultado aqui vai ser 4 + 5 = 9 pois incrementa o c primeiro
-        //ou seja o c nestasituaçao ja vai estar valendo 5
+        //ou seja o c nesta situaçao ja vai estar valendo 5
 
 
 

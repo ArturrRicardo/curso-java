@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.aula9_Laços;
 
 public class aula13_for {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class aula13_for {
         // a propria estrutura ja te pede a quantidade de voltas ( incremento) que ela irá possui
         // aqui tbm é recomendavel criar a variavel dentro dele
         // este laço e estruturado por:
-        // seu nome( inicialização;consição;incremento)
+        // seu nome( inicialização;condição;incremento)
         // inicialização= criaçao da variavel do laço
         // consição= ate onde este laço vai
         // incremento= de quanto em qunanto a variavel vai ser atualizada

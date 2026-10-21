@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.aula6_Estruturas_Condicionais;
 
 import java.util.Scanner;
 public class aula7_estruturas_condicionais {
@@ -18,7 +18,7 @@ public class aula7_estruturas_condicionais {
         // possuimos as seguintes estruturas
         // se (if) ou seja: se a sua condiçao se encaixar aqui, faça isso
         // else if (senao se) ou seja: se a sua condiçao nao se encaixar no if realize o else if
-        //else (senao) ou seja: se a sua condiçao na se encaixar em nenhuma das outras acima realize este aqui.
+        //else (senao) ou seja: se a sua condiçao nao se encaixar em nenhuma das outras acima realize este aqui.
 
         if (media>9){
             System.out.println("Parabens");//primeira condiçao é se a sua media for maior que 9 mostre a palavra parabens
@@ -30,7 +30,7 @@ public class aula7_estruturas_condicionais {
             System.out.println("precisamos melhorar isso "); // aqui informa se a nota for diferente das outras 2 condiçoes mostre a mensagem
         }
 
-        System.out.println("Sua nota é: " + media);
+        System.out.println("Sua nota é: " + media); // aqui mostramos realmente a nota total
 
     }
 }

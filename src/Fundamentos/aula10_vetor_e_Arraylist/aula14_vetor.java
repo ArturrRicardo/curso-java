@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.aula10_vetor_e_Arraylist;
 import java.util.Arrays;     // neste codigo o array importado é so para mostrar o metodo abaixo
 public class aula14_vetor {
     public static void main(String[] args) {
@@ -16,22 +16,24 @@ public class aula14_vetor {
 
         // aqui ja informamos todos os valores que estao dentro do nosso vetor
 
-        //agora para mostrarmos ele é necessario criar um laço para percorrer cada area do nosso vetor e ai sim nos mostar ele
+        //agora para imprimir ele é necessario criar um laço para percorrer cada area do nosso vetor e ai sim nos mostar ele
         //ou
         // transformar nosso vetor em string
 
-        System.out.println(Arrays.toString( vetor));
+        System.out.println(Arrays.toString( vetor)); // aqui transformamos o nosso vetor em String e ai mostramos ele sem precisar de laço
 
+
+        // imprimindo usando laço
 
 
         for (int p=0; p<=2;p++){ // aqui mandamos ele fazer a volta no mesmo tamanho dos vetores
             System.out.println(vetor[p]); // ja aqui mandamos ele printar o vetor na posiçao do laço ou seja
 
             // na primeira volta do laço (p) ele começará com zero (0)
-            // e como o nosso vetor tbm começa com 0, o laço faz meio que uma leve junçao para mostrar
+            // e como o nosso vetor sempre começa na casa 0, o laço faz meio que uma leve junçao para mostrar a casa do vetor que é 25
         }
 
-        System.out.println("Mostrando outro vetor abiaxo :");
+        System.out.println("Mostrando outro vetor abaixo :");
         System.out.println("................................ ");
 
         // OUTRA FORMA DE CRIAR NOSSO VETOR
@@ -48,7 +50,7 @@ public class aula14_vetor {
 
             // esta forma usando length é melhor pois n precisa ficar sabendo qual e o tamanho ideal do vetor pois o length ja sabe
 
-            // ou pode ser assim tbm v<vetores.length isso faz com que o laço consiga chegar ao mesmo tamanho do length e para o laço
+            // ou pode ser assim tbm v<vetores.length isso faz com que o laço consiga chegar ao mesmo tamanho do length e parar o laço assim nao usamos o <= p saber o valor
 
         }
 
@@ -61,16 +63,16 @@ public class aula14_vetor {
         Arrays.sort(nomes); // colocar ele em ordem
 
         for (String posicoes: nomes ){ //criamos um for do tipo string para percorrer os vetores
-            System.out.println(posicoes); // aqui mostramos o vetor(nomes) usando laço
+            System.out.println(posicoes); // aqui mostramos o vetor(nomes) usando laço este for é chamado de for each
         }
 
         //Para sabermos encontrarmos um valor que está dentro de uma casa
 
 
-        int c = Arrays.binarySearch(nomes,"Gato"); // usamos este metodo que precisa como parametro o vetor que ele irá procurar e o que ele esta procurando
+        int c = Arrays.binarySearch(nomes,"Gato"); // usamos este metodo que precisa como parametro o vetor que ele irá procurar, e o que ele está procurando
 
         // ele só ira te retornar a casa em que este valor se encontra
-        // se ele nao achar ele te devolve um valor negativo
+        // se ele nao achar ele te devolve um valor negativo (-1)
 
         System.out.println("Encontramos a palavra gato na posição " + c);
 
@@ -82,10 +84,10 @@ public class aula14_vetor {
 
         System.out.printf("o numero 4 se encontra na posição: [ %d ] " , b);
 
-        //atribuindo um vetores com o mesmo valor em todas as casa
+        //atribuindo um vetor com o mesmo valor em todas as casa
 
         int todos[]=new int[20]; // criamos um vetor com um tamanho de 20 espaços para preencher
-        Arrays.fill(todos,7); // aqui usamos um metodo para olocar o numero 7 nas 20 casas do nosso vetor
+        Arrays.fill(todos,7); // aqui usamos um metodo para colocar o numero 7 nas 20 casas do nosso vetor
 
 
             for(int j:todos){   //aqui estamos mostrando o nosso vetor com os 20 valores ja preenchidos
