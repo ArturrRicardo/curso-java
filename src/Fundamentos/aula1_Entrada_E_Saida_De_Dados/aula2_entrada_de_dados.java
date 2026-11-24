@@ -6,7 +6,7 @@ public class aula2_entrada_de_dados {
         //primeiro precisamos impportar a biblioteca Scanner para ter a entrada de dados
         //Agora temos que criar nosso objeto da classe Scanner
         Scanner imput =new Scanner(System.in); // aqui criamos nosso scanner e o chamamos de imput foi so o nome que eu quis colocar p variavel criada
-        // mas geralmente em  java nos usamos o nome Scanner para usar ela mesma
+        // mas geralmente em  java nos usamos o nome Scanner ( ou sc ) para usar ela mesma
 
 
         // agora para cada tipo de entrada usamos o seu tipo expecifico
@@ -28,7 +28,8 @@ public class aula2_entrada_de_dados {
         double num = imput.nextDouble(); // para double
 
 
-        char caracter = imput.nextLine().charAt(0); // aqui estamos adaptamos o char para ler como se fosse uma string
+        char caracter = imput.nextLine().charAt(0);
+        // aqui estamos adaptamos o char para ler como se fosse uma string
         // e ai pegamos somente o primeiro caractere da entrada
 
         // continuar a explicação...
@@ -68,7 +69,7 @@ public class aula2_entrada_de_dados {
         System.out.println(" Isso e um exemplo mas deve ser aplicado por exemplo se houver int+String ou int + float + string  ");
         System.out.println(" Entao o ideal a se fazer e sempre que estiver lendo algo numerico e apos vc precisar ler uma string antes de ler a string \n" +
                 " sempre crie um nextline antes de ler a string para limpar o buffer " );
-        imput.close(); // sempre é necessario fechar o nosso buffer
+        imput.close(); // sempre é necessario fechar o nosso scanner
 
 
     }

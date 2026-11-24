@@ -10,6 +10,7 @@ public class exercicio9_sistema_alunos {
 
         float notas [] = new float[3];
 
+
         int contador=0;
 
         while(true){

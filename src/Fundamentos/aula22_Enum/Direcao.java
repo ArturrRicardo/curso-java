@@ -36,6 +36,10 @@ public class Direcao {
              }
 
         }
+
+        // dentro da classe Direcao criamos o nosso enum com seus valores e um atributo para cada valor
+        // criamos o seu construtor ( que n precisa informar modificador de acesso)
+        // e o metodo  do proprio enum
     }
 
     public Direcao(){}

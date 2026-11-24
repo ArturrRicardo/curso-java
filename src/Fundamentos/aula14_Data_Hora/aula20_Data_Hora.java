@@ -10,7 +10,7 @@ public class aula20_Data_Hora {
 
     public static void main(String[] args) {
 
-        // aprendendo com o neio alvez como informar a ddata e hora de forma correta no seu codigo ou projeto
+        // aprendendo com o neio alvez como informar a data e hora de forma correta no seu codigo ou projeto
 
         LocalDate dataLocal =LocalDate.now(); // informa a data local de hoje
         LocalDateTime dataHoraLocal = LocalDateTime.now();  // informa data e hora de hoje
